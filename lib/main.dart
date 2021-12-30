@@ -29,6 +29,7 @@ class SecondClass extends StatelessWidget {
         runSpacing: 6.0,
         children: [
           Container(
+            decoration: BoxDecoration(),
             height: 200,
             width: double.infinity,
             color: Colors.amber,
