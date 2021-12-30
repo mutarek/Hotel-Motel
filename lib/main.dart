@@ -37,11 +37,19 @@ class SecondClass extends StatelessWidget {
                 child: Center(
                     child: Column(
                   children: [
-                    Text('TSM Cargo'),
-                    Text('TSM Cargo'),
-                    Text('TSM Cargo'),
-                    Text('TSM Cargo'),
-                    Text('TSM Cargo')
+                    Chip(
+                      elevation: 20,
+                      padding: EdgeInsets.all(8),
+                      backgroundColor: Colors.greenAccent[100],
+                      shadowColor: Colors.black,
+                      avatar: CircleAvatar(
+                        backgroundImage: NetworkImage("https://pbs.twimg.com/profile_images/1304985167476523008/QNHrwL2q_400x400.jpg"), //NetwordImage
+                      ), //CircleAvatar
+                      label: Text(
+                        'GeeksforGeeks',
+                        style: TextStyle(fontSize: 20),
+                      ), //Text
+                    ),
                   ],
                 )),
               ),
