@@ -28,12 +28,11 @@ class SecondClass extends StatelessWidget {
         spacing: 6.0,
         runSpacing: 6.0,
         children: [
-          chip('Health', Color(0xFFff8a65)),
-          chip('Food', Color(0xFF4fc3f7)),
-          chip('Lifestyle', Color(0xFF9575cd)),
-          chip('Sports', Color(0xFF4db6ac)),
-          chip('Nature', Color(0xFF5cda65)),
-          chip('Learn', Color(0xFFacbb65)),
+          Container(
+            height: 200,
+            width: double.infinity,
+            color: Colors.amber,
+          )
         ],
       ),
     );
