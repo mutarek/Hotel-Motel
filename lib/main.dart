@@ -24,7 +24,7 @@ class SecondClass extends StatelessWidget {
       ),
 
 //appp bar closing
-      body: Column(
+      body: Wrap(
         children: [
           chip('Health', Color(0xFFff8a65)),
           chip('Food', Color(0xFF4fc3f7)),
