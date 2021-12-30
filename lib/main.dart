@@ -25,6 +25,8 @@ class SecondClass extends StatelessWidget {
 
 //appp bar closing
       body: Wrap(
+        spacing: 6.0,
+        runSpacing: 6.0,
         children: [
           chip('Health', Color(0xFFff8a65)),
           chip('Food', Color(0xFF4fc3f7)),
