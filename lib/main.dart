@@ -39,7 +39,9 @@ class _TravelAppState extends State<TravelApp> {
         title: Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Drawer();
+              },
               icon: Icon(
                 Icons.menu,
                 color: Colors.black,
