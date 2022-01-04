@@ -45,7 +45,11 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating, 
                     child: Center(
                       child: Text(
                         price.toString(),
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.w800,
+                        ),
                       ),
                     ),
                   )
