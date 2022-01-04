@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 Widget travelCard(String imgUrl, String hotelName, String location, int rating, int price) {
   return Card(
-    margin: EdgeInsets.only(right: 12.0),
+    margin: EdgeInsets.only(right: 22.0),
     clipBehavior: Clip.antiAlias,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(30.0),
