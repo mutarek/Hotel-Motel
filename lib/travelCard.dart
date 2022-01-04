@@ -42,14 +42,11 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating, 
                   ),
                   Expanded(
                     flex: 1,
-                    child: Row(
-                      children: [
-                        for (var i = 0; i < rating; i++)
-                          Icon(
-                            Icons.star,
-                            color: Color(0xFFFE8C68),
-                          ),
-                      ],
+                    child: Center(
+                      child: Text(
+                        price.toString(),
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   )
                 ],
