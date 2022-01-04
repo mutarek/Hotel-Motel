@@ -25,7 +25,8 @@ class SecondClass extends StatelessWidget {
 
 //appp bar closing
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           ElevatedButton(
             onPressed: () {
