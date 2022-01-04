@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'datasrc.dart';
 import 'travelCard.dart';
 
 void main() {
@@ -128,14 +129,12 @@ class _TravelAppState extends State<TravelApp> {
                         children: [
                           //Now let's create our first tab page
                           Container(
-                            child: ListView(
+                            child: ListView.builder(
                               scrollDirection: Axis.horizontal,
-                              children: [
-                                //Now let's add and test our first card
-                                travelCard(urls[0], "Luxary Hotel", "Caroline", 3, 1200),
-                                travelCard(urls[5], "Plaza Hotel", "Italy", 4, 100),
-                                travelCard(urls[2], "Safari Hotel", "Africa", 5, 500),
-                              ],
+                              itemCount: myda.length,
+                              itemBuilder: (_, index) {
+                                return travelCard(myda[index]['images'], myda[index]['Hotel_name'], myda[index]['loc'], myda[index]['ratting'], myda[index]['price']);
+                              },
                             ),
                           ),
                           Container(
