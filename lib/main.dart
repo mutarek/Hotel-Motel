@@ -151,7 +151,10 @@ class _TravelAppState extends State<TravelApp> {
                           Container(
                             child: ListView(
                               scrollDirection: Axis.horizontal,
-                              children: [],
+                              children: [
+                                travelCard(urls[6], "Visit Rome", "Italy", 4, 300),
+                                travelCard(urls[8], "Visit Sidi bou Said", "Tunsia", 4, 200),
+                              ],
                             ),
                           ),
                         ],
