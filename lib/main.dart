@@ -46,6 +46,10 @@ class SecondClass extends StatelessWidget {
                   }).then((value) {});
             },
             child: Text('Diloe'),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('Diloe'),
           )
         ],
       ),
