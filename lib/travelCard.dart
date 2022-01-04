@@ -38,7 +38,7 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating) 
               Expanded(
                 child: Container(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
