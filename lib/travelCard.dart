@@ -44,7 +44,7 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating, 
                     flex: 1,
                     child: Center(
                       child: Text(
-                        price.toString(),
+                        price.toString() + 'BDT',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 22.0,
