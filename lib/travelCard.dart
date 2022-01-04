@@ -28,12 +28,30 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating, 
               Row(
                 children: [
                   //this loop will allow us to add as many star as the rating
-                  for (var i = 0; i < rating; i++)
-                    Icon(
-                      Icons.star,
-                      color: Color(0xFFFE8C68),
+                  Expanded(
+                    flex: 1,
+                    child: Row(
+                      children: [
+                        for (var i = 0; i < rating; i++)
+                          Icon(
+                            Icons.star,
+                            color: Color(0xFFFE8C68),
+                          ),
+                      ],
                     ),
-                  Text(price.toString()),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Row(
+                      children: [
+                        for (var i = 0; i < rating; i++)
+                          Icon(
+                            Icons.star,
+                            color: Color(0xFFFE8C68),
+                          ),
+                      ],
+                    ),
+                  )
                 ],
               ),
               Expanded(
