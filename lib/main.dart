@@ -24,16 +24,27 @@ class SecondClass extends StatelessWidget {
       ),
 
 //appp bar closing
-      body: Wrap(
-        spacing: 6.0,
-        runSpacing: 6.0,
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.amber,
-            ),
-            height: 200,
-            width: double.infinity,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      title: Text('Wa'),
+                      content: Text('Diloje'),
+                      actions: [
+                        TextButton(
+                          onPressed: () => Navigator.pop(context),
+                          child: Text('Wa'),
+                        )
+                      ],
+                    );
+                  }).then((value) {});
+            },
+            child: Text('Diloe'),
           )
         ],
       ),
