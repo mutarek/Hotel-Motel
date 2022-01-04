@@ -15,7 +15,7 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating, 
         decoration: BoxDecoration(
             image: DecorationImage(
           image: NetworkImage(imgUrl),
-          fit: BoxFit.cover,
+          fit: BoxFit.contain,
           scale: 2.0,
         )),
         width: 200.0,
