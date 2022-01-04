@@ -6,7 +6,7 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating, 
     margin: EdgeInsets.only(right: 22.0),
     clipBehavior: Clip.antiAlias,
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12.0),
+      borderRadius: BorderRadius.circular(16.0),
     ),
     elevation: 0.0,
     child: InkWell(
