@@ -4,9 +4,6 @@ import 'travelCard.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(
-      brightness: Brightness.dark,
-    ),
     debugShowCheckedModeBanner: false,
     home: TravelApp(),
   ));
