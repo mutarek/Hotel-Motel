@@ -57,7 +57,7 @@ class _TravelAppState extends State<TravelApp> {
           children: [
             //Let's start by adding the text
             Text(
-              "Welcome Doctor Code",
+              "Hootel & Motel",
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 26.0,
