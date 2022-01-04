@@ -132,9 +132,9 @@ class _TravelAppState extends State<TravelApp> {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 //Now let's add and test our first card
-                                travelCard(urls[0], "Luxary Hotel", "Caroline", 3),
-                                travelCard(urls[5], "Plaza Hotel", "Italy", 4),
-                                travelCard(urls[2], "Safari Hotel", "Africa", 5),
+                                travelCard(urls[0], "Luxary Hotel", "Caroline", 3, 1200),
+                                travelCard(urls[5], "Plaza Hotel", "Italy", 4, 100),
+                                travelCard(urls[2], "Safari Hotel", "Africa", 5, 500),
                               ],
                             ),
                           ),
@@ -143,8 +143,8 @@ class _TravelAppState extends State<TravelApp> {
                               scrollDirection: Axis.horizontal,
                               children: [
                                 //Here you can add what ever you want
-                                travelCard(urls[6], "Visit Rome", "Italy", 4),
-                                travelCard(urls[8], "Visit Sidi bou Said", "Tunsia", 4),
+                                travelCard(urls[6], "Visit Rome", "Italy", 4, 300),
+                                travelCard(urls[8], "Visit Sidi bou Said", "Tunsia", 4, 200),
                               ],
                             ),
                           ),

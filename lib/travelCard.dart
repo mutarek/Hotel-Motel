@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget travelCard(String imgUrl, String hotelName, String location, int rating) {
+Widget travelCard(String imgUrl, String hotelName, String location, int rating, int price) {
   return Card(
     margin: EdgeInsets.only(right: 22.0),
     clipBehavior: Clip.antiAlias,
@@ -33,35 +33,34 @@ Widget travelCard(String imgUrl, String hotelName, String location, int rating) 
                       Icons.star,
                       color: Color(0xFFFE8C68),
                     ),
+                  Text(price.toString()),
                 ],
               ),
               Expanded(
-                child: Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        hotelName,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 22.0,
-                          fontWeight: FontWeight.w800,
-                        ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      hotelName,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.w800,
                       ),
-                      SizedBox(
-                        height: 3.0,
+                    ),
+                    SizedBox(
+                      height: 3.0,
+                    ),
+                    Text(
+                      location,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w600,
                       ),
-                      Text(
-                        location,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],
