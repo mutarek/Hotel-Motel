@@ -5,5 +5,12 @@ List<Map<String, dynamic>> myda = [
     'ratting': 3,
     'price': 1000,
     'loc': 'Dhaka'
+  },
+  {
+    'Hotel_name': 'The Orient',
+    'images': 'https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg',
+    'ratting': 3,
+    'price': 1000,
+    'loc': 'Dhaka'
   }
 ];
