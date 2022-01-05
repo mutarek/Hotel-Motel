@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'datasrc.dart';
+import 'secondpage.dart';
 import 'travelCard.dart';
 
 void main() {
@@ -133,6 +134,10 @@ class _TravelAppState extends State<TravelApp> {
                               scrollDirection: Axis.horizontal,
                               itemCount: myda.length,
                               itemBuilder: (_, index) {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Secondpage()),
+                                );
                                 return InkWell(onTap: () {}, child: travelCard(myda[index]['images'], myda[index]['Hotel_name'], myda[index]['loc'], myda[index]['ratting'], myda[index]['price']));
                               },
                             ),
