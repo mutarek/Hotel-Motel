@@ -134,7 +134,7 @@ class _TravelAppState extends State<TravelApp> {
                               scrollDirection: Axis.horizontal,
                               itemCount: myda.length,
                               itemBuilder: (_, index) {
-                                return InkWell(
+                                return GestureDetector(
                                     onTap: () {
                                       Navigator.push(
                                         context,
