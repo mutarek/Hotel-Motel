@@ -134,11 +134,14 @@ class _TravelAppState extends State<TravelApp> {
                               scrollDirection: Axis.horizontal,
                               itemCount: myda.length,
                               itemBuilder: (_, index) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => Secondpage()),
-                                );
-                                return InkWell(onTap: () {}, child: travelCard(myda[index]['images'], myda[index]['Hotel_name'], myda[index]['loc'], myda[index]['ratting'], myda[index]['price']));
+                                return InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => Secondpage()),
+                                      );
+                                    },
+                                    child: travelCard(myda[index]['images'], myda[index]['Hotel_name'], myda[index]['loc'], myda[index]['ratting'], myda[index]['price']));
                               },
                             ),
                           ),
